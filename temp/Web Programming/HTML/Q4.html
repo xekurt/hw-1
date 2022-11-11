@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Q4</title>
+        <link rel="stylesheet" href="/Style/fonts.css" />
+        <link rel="stylesheet" href="/Style/Q4.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">تست اطلاعات جغرافیایی</h1>
+            <label class="number-label" for="number"
+                >چه تعداد سوال از شما پرسیده شود؟</label
+            >
+            <input
+                type="number"
+                name="number"
+                id="numberOfQuestions"
+                value="1"
+                autofocus
+            />
+
+            <button class="btn startExam">شروع آزمون</button>
+
+            <section class="questions__container"></section>
+
+            <div class="">
+                <p class="question">پایتخت چین کجاست؟</p>
+
+                <div class="answering-container">
+                    <label for="choice1">گزینه 1</label>
+                    <input
+                        class="choices"
+                        type="radio"
+                        name="choice"
+                        id="choice1"
+                    />
+                    <label for="choice2">گزینه 2</label>
+                    <input
+                        class="choices"
+                        type="radio"
+                        name="choice"
+                        id="choice2"
+                    />
+                    <label for="choice3">گزینه 3</label>
+                    <input
+                        class="choices"
+                        type="radio"
+                        name="choice"
+                        id="choice3"
+                    />
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn nextQuestion">سوال بعدی</button>
+                    <button class="btn endOfExam">پایان آزمون</button>
+                </div>
+            </div>
+
+            <div class="correction-container">
+                <p class="correct-answers">پاسخ صحیح</p>
+                <p class="incorrect-answers">پاسخ غلط</p>
+                <p class="score">نمره</p>
+            </div>
+        </div>
+        <script src="/js/Q4.js"></script>
+    </body>
+</html>

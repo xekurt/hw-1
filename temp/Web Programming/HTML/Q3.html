@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Q3</title>
+        <link rel="stylesheet" href="/Style/Q3.css" />
+        <link rel="stylesheet" href="/Style/fonts.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">تبدیل ارز</h1>
+            <div class="exchange-form">
+                <div class="currency-choose-container">
+                    <label for="currency-choose-us">دلار آمریکا</label>
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="currency-choose"
+                        id="currency-choose-us"
+                        checked
+                    />
+
+                    <label for="currency-choose-eur">یورو</label>
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="currency-choose"
+                        id="currency-choose-eur"
+                    />
+
+                    <label for="currency-choose-aus">دلار استرالیا</label>
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="currency-choose"
+                        id="currency-choose-aus"
+                    />
+
+                    <label for="currency-choose-can">دلار کانادا</label>
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="currency-choose"
+                        id="currency-choose-can"
+                    />
+
+                    <label for="currency-choose-pnd">پوند انگلیس</label>
+                    <input
+                        class="radio"
+                        type="radio"
+                        name="currency-choose"
+                        id="currency-choose-pnd"
+                    />
+                    <div class="exchange-amount" style="text-align: center">
+                        <label for="amount" id="amount-label"
+                            >مقدار ارز موردنظر</label
+                        >
+                        <input
+                            type="number"
+                            name="amount"
+                            id="amount"
+                            min="0"
+                            required
+                            autofocus
+                        />
+                    </div>
+
+                    <button class="calculate-btn">محاسبه</button>
+                </div>
+
+                <p class="exchange-result"></p>
+                <!-- <p class="exchange-result eur"></p>
+            <p class="exchange-result aus"></p>
+            <p class="exchange-result can"></p>
+            <p class="exchange-result pnd"></p> -->
+            </div>
+        </div>
+        <script src="/js/Q3.js"></script>
+    </body>
+</html>

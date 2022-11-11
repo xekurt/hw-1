@@ -1,0 +1,69 @@
+.age_container {
+  background: url(/src//assets/images/Q2Background.png) 0 17% / cover no-repeat;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.age_container .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+
+.age_container input::-webkit-outer-spin-button,
+.age_container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.age_container input,
+label {
+  text-align: center;
+  display: block;
+  width: 50%;
+  margin-top: 0.5rem;
+}
+
+.age_container input {
+  outline: 0;
+  padding: 0.5rem 5rem;
+  border: 1px solid #864;
+  border-radius: 32px;
+}
+
+.age_container input:focus {
+  border: 2px solid rgb(87, 50, 87);
+}
+
+.age_container button {
+  font-family: "yekan";
+  outline: 0;
+  border: 0;
+  background-color: #864;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1.5rem 3rem;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-top: 2rem;
+}
+
+.age_container button:hover {
+  transform: scale(1.1);
+}
+
+.age_container .result {
+  direction: rtl;
+  width: 50%;
+  background-color: #bfdbf7;
+  border-radius: 5px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}

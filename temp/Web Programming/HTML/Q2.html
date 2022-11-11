@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/Q2.css">
+    <link rel="stylesheet" href="/Style/fonts.css">
+    <title>Q2</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" class="form">
+            <h1 class="heading">محاسبه گر سن</h1>
+            <label for="year">سال تولد</label>
+            <input type="number" name="year" id="year" min="1970" max="2022" required autofocus>
+
+            <label for="month">ماه تولد</label>
+            <input type="number" name="month" id="month" min="1" max="12" required>
+
+            <label for="day">روز تولد</label>
+            <input type="number" name="day" id="day" min="1" max="31" required>
+
+            <button type="submit">محاسبه ی سن شما</button>
+        </form>
+        <p class="resultAge"></p>
+    </div>
+    <script src="/js/Q2.js"></script>
+</body>
+</html>

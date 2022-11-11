@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <link rel="stylesheet" href="/Style/fonts.css">
+    <link rel="stylesheet" href="/Style/Q5.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="header">تشخیص قیمت خودرو</h1>
+
+        <form class="car-details">
+
+            <label for="model">مدل خودرو</label>
+            <select name="car-model" id="model">
+                <option value="">پژو 405</option>
+                <option value="">پژو پارس</option>
+                <option value="">پژو 206</option>
+                <option value="">ساینا</option>
+            </select>
+
+            <label for="year">سال ساخت</label>
+            <select name="year-made" id="year">
+                <option value="">1401</option>
+                <option value="">1400</option>
+                <option value="">1399</option>
+                <option value="">1398</option>
+            </select>
+
+            <label for="insurance-status">وضعیت بیمه</label>
+            <input type="number" name="insurance" id="insurance-status" min="0" max="12" required placeholder="چند ماه بیمه؟">
+
+            <label for="body-status">وضعیت بدنه</label>
+            <select name="colored" id="body-status">
+                <option value="0" selected>بی رنگ</option>
+                <option value="1">رنگ دار</option>
+            </select>
+
+            <button class="btn" type="submit">محاسبه قیمت</button>
+        </form>
+
+        <p class="price"></p>
+        
+    </div>
+</body>
+</html>

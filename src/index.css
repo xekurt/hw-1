@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Iransans"; /*Can be any text*/
+  src: local("Iransans"),
+    url(./assets/fonts/IRANSansWeb_Medium.ttf) format("truetype");
+}
+
+* {
+  font-family: Iransans;
+}
+
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #8d99ae;
+}
+.navbar {
+  height: 10vh;
+}
+.contents {
+  height: "90vh";
+}

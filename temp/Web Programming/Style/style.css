@@ -1,0 +1,89 @@
+/* Reset */
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background:#222 url(/Assets/desktoplux.jpg) 120px -35px/cover;
+}
+
+h1,h2,h3,p{
+    color: #ddd;
+}
+
+/* Container */
+
+.container{
+    background-color: #111;
+}
+
+.main-container{
+    opacity: .92;
+    height: 100vh;
+}
+
+/* Header */
+
+.main-header{
+    opacity: .8;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-tag{
+    margin: .7rem;
+    font-size: medium;
+}
+
+.link-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.link{
+    background-color: #86432e;
+    padding: 1rem 2rem;
+    margin: .5rem 0;
+    text-decoration: none;
+    font-size: larger;
+    border-radius: 18px;
+    transition: all .2s ease-in-out;
+    color: #ddd;
+    font-weight: 500;
+}
+
+.link:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width:768px) {
+    .link-container{
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+    .link{
+        margin-left: .8rem;
+    }
+    .god{
+        font-size: 1.5rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .author{
+        font-size: 1.5rem;
+    }
+}
