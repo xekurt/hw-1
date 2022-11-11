@@ -1,0 +1,119 @@
+.exchange__container {
+  background: #222 url(/src/assets/images/Q3Background.jpeg) 0 0 / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  height: 90vh;
+  direction: rtl;
+  position: relative;
+}
+.exchange__container::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #111;
+  opacity: 0.85;
+  position: absolute;
+  z-index: 0;
+}
+
+.exchange-form {
+  width: 40%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exchange__container h1 {
+  z-index: 1;
+  color: white;
+  font-size: 3rem;
+}
+
+.exchange__container label {
+  color: white;
+}
+
+.exchange__container input {
+  outline: 0;
+  border-radius: 32px;
+  height: 30px;
+}
+.exchange__container input#amount:focus {
+  border: 2px solid red;
+}
+
+.currency-choose-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90%;
+}
+.exchange__container input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.exchange__container input#amount:focus {
+  border: 1px solid red;
+}
+
+.exchange__container #amount {
+  display: block;
+  text-align: center;
+  direction: ltr;
+  margin-top: 2rem;
+}
+
+.exchange__container .calculate-btn {
+  font-family: "yekan";
+  outline: 0;
+  border: 0;
+  background-color: #86432e;
+  color: white;
+  padding: 0.5rem 1.8rem;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: large;
+}
+.exchange-amount {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.exchange-amount input {
+  margin-bottom: 1rem;
+  width: 50%;
+}
+.exchange-amount label {
+  font-size: 18px;
+}
+.exchange__container .calculate-btn:hover {
+  transform: scale(1.1);
+}
+.exchange__container .exchange-result {
+  position: absolute;
+  display: flex;
+  width: 600px;
+  color: wheat;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.result {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}

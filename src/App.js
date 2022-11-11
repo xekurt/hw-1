@@ -12,7 +12,6 @@ function App() {
 
   const handleChangePage = (e) => {
     const { id } = e.target;
-
     setActivePage(Number(id));
   };
 
